@@ -21,7 +21,6 @@ html{
     box-sizing: border-box;
     display: flex;
     align-items: center;
-    background-color: aqua;
     &>div{
         width: 33.333%;
         height: 100%;
@@ -505,9 +504,65 @@ html{
       
       .bannner > a:nth-child(1) {
         background-image: url(./海尔官网img/mc_iPhoneDown.png);
+        padding-right: 0.16rem;
       }
       
       .bannner > a:nth-child(2) {
         background-image: url(./海尔官网img/mc_androidDown.png);
       }
+    //   尾部
+    .footer{
+        width: 6.9rem;
+        height: 2.24rem;
+        padding: 0.2rem 0;
+        margin: 0 auto;
+        text-align: center;
+        &>div:nth-child(1),
+        &>div:nth-child(2){
+            height: 0.36rem;
+            padding: 0.1rem;
+            margin: 0 auto;
+        }
+        &>div:nth-child(3){
+            height: 0.72rem;
+            padding: 0.1rem 0;
+            margin: 0.2rem auto 0;
+            }
+       
+        & a,
+        & span{
+            font-size: 0.24rem;
+            color: #444;
+        }
       
+    }
+    // 固定定位
+    .link{
+        width: 1.4rem;
+        height: 1.4504rem;
+        display: block;
+        position: fixed;
+        bottom: 2.9rem ;
+        right: 0.32rem;
+        .fixed{
+            width: 1.4rem;
+            height: 1.4504rem;
+            
+        }
+    }
+    
+    .link1{
+        display: block;
+        width: 0.8rem;
+        height: 0.8rem;
+        position: fixed;
+        bottom: 2.18rem;
+        right: 0.32rem;
+        .fixed1{
+            width: 0.8rem;
+            height: 0.8rem;
+            background: rgba(0,0,0,.6);
+            border-radius: 0.1rem;
+        }
+        
+    }
