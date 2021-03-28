@@ -1,0 +1,438 @@
+@charset "UTF-8";
+.pc-header-2 {
+  width: 1366px;
+  height: 150px;
+  margin: 0 auto;
+  padding: 0.1px 0 50px;
+  text-align: center;
+}
+
+.pc-header-2 h3 {
+  width: 100%;
+  font-size: 30px;
+  color: #333333;
+  margin-top: 84px;
+  font-weight: bold;
+}
+
+.pc-header-2 p {
+  font-size: 14px;
+  color: #666666;
+  line-height: 16px;
+  margin-top: 18px;
+}
+
+/*滚动字*/
+.voicecontrol {
+  width: 1366px;
+  height: 510px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.voicecontrol img {
+  width: 100%;
+  height: 100%;
+  float: left;
+}
+
+.voicecontrol ul {
+  width: 380px;
+  height: 200px;
+  position: absolute;
+  right: 160px;
+  top: 30px;
+  perspective: 500px;
+}
+
+.voicecontrol ul li {
+  font-size: 18px;
+  color: #4ba5cf;
+  margin-top: 8px;
+  text-align: center;
+  transition: all 1s ease;
+}
+
+.voicecontrol ul li:hover {
+  font-size: 28px;
+  transform: translateZ(50px);
+}
+
+.easydesign {
+  width: 1366px;
+  height: 200px;
+  margin-bottom: 50px;
+  margin: 0 auto;
+  text-align: center;
+  background: #f1f1f1;
+  padding: 0.1px;
+}
+
+.easydesign h3 {
+  margin-top: 84px;
+  font-size: 30px;
+  color: #333333;
+  font-weight: bold;
+}
+
+.easydesign p {
+  font-size: 14px;
+  color: #666666;
+  margin-top: 18px;
+}
+
+.phone {
+  width: 1366px;
+  height: 510px;
+  margin: 0 auto;
+  background-image: url(./海尔官网img/pc_phone.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.threeactive {
+  margin: 0 auto;
+  width: 1366px;
+  height: 595px;
+  background-image: url(./海尔官网img/pc_member.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 0.1px;
+  position: relative;
+}
+
+.threeactive .threeactivecontainer {
+  width: 100%;
+  height: 316px;
+  position: absolute;
+  top: 160px;
+  left: 0px;
+}
+
+.threeactive .threeactivecontainer > div {
+  width: 530px;
+  height: 140px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.threeactive .threeactivecontainer > div > span {
+  display: inline-block;
+  width: 140px;
+  height: 140px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.threeactive .threeactivecontainer > div > span .item2box,
+.threeactive .threeactivecontainer > div > span .item3box {
+  opacity: 0;
+}
+
+.threeactive .threeactivecontainer > div > span .hidecontain {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  bottom: 0px;
+  left: 0px;
+  text-align: center;
+}
+
+.threeactive .threeactivecontainer > div > span .hidecontain > h4 {
+  color: #fff;
+  font-size: 32px;
+}
+
+.threeactive .threeactivecontainer > div > span .hidecontain > h5 {
+  margin-top: 14px;
+  color: #fff;
+  font-size: 32px;
+}
+
+.threeactive .threeactivecontainer > div > span .hidecontain > p {
+  margin-top: 32px;
+  font-size: 20px;
+  color: #EEEEEE;
+}
+
+.threeactive .threeactivecontainer > div > span:nth-child(1) {
+  background-image: url(./海尔官网img/pc_memberImg1.png);
+  animation: action1 9s ease  infinite normal;
+}
+
+@keyframes action1 {
+  from {
+    background-image: url(./海尔官网img/pc_memberImg1_1.png);
+  }
+  32% {
+    background-image: url(./海尔官网img/pc_memberImg1_1.png);
+  }
+  33% {
+    background-image: url(./海尔官网img/pc_memberImg1.png);
+  }
+  100% {
+  }
+}
+
+.threeactive .threeactivecontainer > div > span:nth-child(2) {
+  background-image: url(./海尔官网img/pc_memberImg2.png);
+  animation: action2 9s ease  infinite normal;
+}
+
+@keyframes action2 {
+  from {
+    background-image: url(./海尔官网img/pc_memberImg2.png);
+  }
+  32% {
+    background-image: url(./海尔官网img/pc_memberImg2.png);
+  }
+  33% {
+    background-image: url(./海尔官网img/pc_memberImg2_1.png);
+  }
+  65% {
+    background-image: url(./海尔官网img/pc_memberImg2_1.png);
+  }
+  66% {
+    background-image: url(./海尔官网img/pc_memberImg2.png);
+  }
+  100% {
+  }
+}
+
+.threeactive .threeactivecontainer > div > span:nth-child(3) {
+  background-image: url(./海尔官网img/pc_memberImg3.png);
+  animation: action3 9s ease  infinite normal;
+}
+
+@keyframes action3 {
+  from {
+    background-image: url(./海尔官网img/pc_memberImg3.png);
+  }
+  65% {
+    background-image: url(./海尔官网img/pc_memberImg3.png);
+  }
+  66% {
+    background-image: url(./海尔官网img/pc_memberImg3_1.png);
+  }
+  99% {
+    background-image: url(./海尔官网img/pc_memberImg3_1.png);
+  }
+  100% {
+    background-image: url(./海尔官网img/pc_memberImg3.png);
+  }
+}
+
+.threeactive .threeactivecontainer > div .item1box {
+  animation: action1_a 9s ease  infinite normal;
+}
+
+@keyframes action1_a {
+  from {
+    opacity: 1;
+  }
+  32% {
+    opacity: 1;
+  }
+  33% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.threeactive .threeactivecontainer > div .item2box {
+  animation: action2_a 9s ease  infinite normal;
+}
+
+@keyframes action2_a {
+  from {
+    opacity: 0;
+  }
+  32% {
+    opacity: 0;
+  }
+  33% {
+    opacity: 1;
+  }
+  65% {
+    opacity: 1;
+  }
+  66% {
+    opacity: 0;
+  }
+  100% {
+  }
+}
+
+.threeactive .threeactivecontainer > div .item3box {
+  animation: action3_a 9s ease  infinite normal;
+}
+
+@keyframes action3_a {
+  from {
+    opacity: 0;
+  }
+  65% {
+    opacity: 0;
+  }
+  66% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.bottomtitle {
+  width: 1366px;
+  height: 219px;
+  margin: 0 auto;
+  background-image: url(./海尔官网img/pc_bottomTitle.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.bottomtitle + p {
+  width: 1366px;
+  font-size: 30px;
+  margin: 0 auto;
+  color: #333333;
+  text-align: center;
+}
+
+.bannner {
+  width: 1366px;
+  height: 319px;
+  margin: 45px auto 120px;
+  background-image: url(./海尔官网img/pc_bottomCode1.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.bannner a {
+  display: inline-block;
+  width: 177px;
+  height: 56px;
+  margin: 0 56px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.bannner > a:nth-child(1) {
+  background-image: url(./海尔官网img/mc_iPhoneDown.png);
+}
+
+.bannner > a:nth-child(2) {
+  background-image: url(./海尔官网img/mc_androidDown.png);
+}
+
+footer {
+  width: 100%;
+  max-width: 1680px;
+  height: auto;
+  margin: 0 auto;
+  background-color: #f6f7f9;
+  padding: 0.1px;
+}
+
+footer > div:nth-child(1) {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  overflow: hidden;
+}
+
+footer > div:nth-child(1) > div {
+  width: 200px;
+}
+
+footer > .startcontainer span {
+  display: block;
+  font-size: 14px;
+  padding: 15px 0;
+  font-weight: 700;
+  color: #000000;
+}
+
+footer > .startcontainer a {
+  display: block;
+  font-size: 12px;
+  color: #444;
+  padding: 5px 0;
+}
+
+footer .endcontainer {
+  width: 1200px;
+  margin: 23px auto 0;
+  padding: 15px 0;
+  border-top: 1px solid #c8c8c8;
+  height: 58px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .endcontainer a,
+footer .endcontainer span {
+  font-size: 12px;
+  color: #444;
+}
+
+footer .endcontainer > div:nth-child(1) {
+  width: 31%;
+}
+
+footer .endcontainer > div:nth-child(2) {
+  width: 38%;
+  text-align: center;
+}
+
+footer .endcontainer > div:nth-child(3) {
+  width: 31%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+footer .endcontainer > div:nth-child(3) a {
+  color: blue;
+}
+
+footer .endcontainer > div:nth-child(3) > span:last-child {
+  display: inline-block;
+  width: 25px;
+  height: 27.5px;
+  padding-left: 10px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+footer .endcontainer > div:nth-child(3) > span:last-child .enderweima {
+  position: absolute;
+  width: 148px;
+  height: 198px;
+  background-image: url(./海尔官网img/erweima.webp);
+  background-repeat: no-repeat;
+  background-size: contain;
+  right: -60px;
+  bottom: 30px;
+  display: none;
+}
+
+footer .endcontainer > div:nth-child(3) > span:last-child:hover {
+  background-color: greenyellow;
+}
+
+footer .endcontainer > div:nth-child(3) > span:last-child:hover .enderweima {
+  display: block;
+}

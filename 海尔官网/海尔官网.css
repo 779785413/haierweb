@@ -1,0 +1,521 @@
+/* 清除默认样式 */
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+li{
+   list-style: none;
+}
+/* 头部整个盒子 */
+.header{
+    width: 100%;
+    max-width: 1680px;
+    height: 70px;
+    margin: 0 auto ;
+    border-bottom: 1px solid #eee;
+    box-sizing: border-box;
+    position: relative;
+    background-color: transparent;
+}
+.hiddenheader{
+    width: 100%;
+    max-width: 1680px;
+    height: 70px;
+    margin: 0 auto ;
+    padding: 0 15px;
+    border-bottom: 1px solid #eee;
+    box-sizing: border-box;
+    top: 0;
+    left: 0px;
+    display: none;
+}
+.hiddenheader>div{
+    width: 33.333%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    float: left;
+}
+.hiddenheader>div:nth-child(2){
+    justify-content: center;
+}
+
+.hiddenheader>div:last-child{
+    justify-content: flex-end;
+}
+.hiddenheader>div:last-child>a:nth-child(3),
+.hiddenheader>div:last-child>a:nth-child(2){
+    padding-left: 11px;
+}
+
+
+.iconfont{
+    font-size: 24px;
+    color:#0c5ca8 ;
+}
+/* 内容区盒子 */
+.headercontainer{
+    width: 1230px;
+    margin: 0 auto;
+    padding: 0 15px;
+    height: 70px;
+    box-sizing: border-box;
+    position: relative;
+    /* background-color: slateblue; */
+}
+/* 左侧导航条盒子,弹性盒子 */
+.headerleft{
+    width: 75%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    /* background-color: skyblue; */
+}
+.logo{
+    width: 85px; ;
+    height: 52.5px;
+
+}
+img{
+    width: 85px; ;
+    height: 52.5px;
+}
+
+.navlist{
+  height: 70px;
+  margin-left: 72px;
+  line-height: 70px;
+  box-sizing: border-box;
+}
+.navlist>ul>li{
+    float: left;
+    
+
+}
+.navlist>ul>li>a{
+    display: inline-block;
+    padding: 0 30px;
+    font-size: 14px;
+    color: #000;
+    font-weight: 700;
+    height: 70px;
+    border-bottom: 1px;
+    box-sizing: border-box;
+}
+
+ .headerright{
+     position: absolute;
+     top: 0px;
+     right:15px ;
+    width: 300px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+.headerright>div{
+    width: 210px;
+    height: 39px;
+    display: flex;
+    align-items: center;
+    background: #fafafa;
+    border-radius: 2px;
+    border: 1px solid #fafafa;
+}
+[type="text"]{
+    width: 80%;
+    height: 38.5px;
+    line-height: 36px;
+    padding: 10px;
+    border: 1px solid transparent;
+    background: #fafafa;
+    outline: none;
+    box-sizing: border-box;
+    
+}
+.headerright .search{
+    display: inline-block;
+    width: 24px;
+    height: 36px;  
+    text-align: center;
+    line-height: 36px;
+}
+.icon-sousuo{
+    font-size: 24px;
+}
+/* 搜索框的隐藏盒子 */
+.showitem{
+    width: 207px;
+    height: auto;
+    position: absolute;
+    left:0;
+    top: 54px;
+    background-color:#fff;
+    display: none;
+}
+.showitem>p{
+    font-size: 12px;
+    color:#aaa;
+}
+.showitem li{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+/* 聚焦input */
+[type="text"]:focus{
+    outline: none;
+    border: 1px solid #c8c8c8;
+}
+[type="text"]:focus~.showitem{
+    display: block;
+}
+/* hover字变蓝 */
+.showitem li:hover>a{
+    color: #0c5ca8;
+}
+
+
+/* 购物车 */
+.headerright .car{
+    display: inline-block;
+    width: 24px;
+    height: 25px;
+    margin-left: 10px;
+}
+.icon-xiazai1{
+    font-size: 24px;
+}
+.headerright .user{
+    display: inline-block;
+    width: 50px;
+    height: 70px;
+    text-align: center;
+    line-height: 70px;
+    margin-left: 10px;
+}
+.icon-icon-user-img{
+    font-size: 24px; 
+}
+
+/* 头部hover时下划线设置样式 */
+.navlist>ul>li:hover>a{
+    color: blue;
+    border-bottom: 8px solid blue;
+}
+
+/* hover的大盒子 */
+.hover_item{
+    width: 1200px;
+    height: 440px;
+    margin: 0 auto;
+    background-color: silver;
+    position: absolute;
+    top: 70px;
+    left: -15px;
+    display: flex;
+    padding: 0 15px;
+    overflow: hidden;
+    display: none;
+}
+.hover_item_left{
+    width: 180px;
+    height: 436px;
+    margin-left: 92px;
+    background-color: blanchedalmond;
+    position: relative;
+}
+.hover_item_left>ul>li{
+    width: 178px;
+    height: 30px;
+    margin: 12px 0px;
+    padding-left: 2px;
+    line-height: 30px; 
+}
+.hover_item_left>ul>li .hover_itemother_middle{
+    opacity: 1;
+  }
+
+.hover_item_left>ul>li:hover .hover_item_middle{
+  opacity: 0;
+  z-index: 9999999;
+}
+.hover_item_left>ul>li>a>span{
+    margin-left: 50px;
+}
+.hover_item_left>ul>li>a{
+    font-size: 14px;
+    color: #000;
+}
+.hover_item_middle{
+    position: absolute;
+    top: 0px;
+   left: 180px;
+    width: 420px;
+    height: 431px;
+    padding-top: 9px;  
+}
+
+.hover_item_middle>span{
+    display: inline-block;
+    width: 33.3333%;
+    margin: 7px 0;
+    box-sizing: border-box;
+    float: left;
+}
+.hover_item_middle>span>a{
+    font-family: "微软雅黑";
+    color: #111;
+    padding-right: 1px; 
+    font-size: 14px;
+    box-sizing: border-box;
+}
+.hover_itemother_middle{
+    display: block;
+}
+/* hover前其他item */
+/* hover后大盒子 */
+
+.navlist>ul>li:hover>.hover_item{
+    display: block;
+}
+/* hover后中间和右边盒子 */
+
+
+
+
+.hover_item_right{
+    width: 240px;
+    height: 296px;
+    position: absolute;
+    top:30px ;
+    left: 840px ;
+    line-height: 0;
+}
+
+.hover_item_right>img{
+    width: 240px;
+    height: 240px;
+    margin: 0px;
+}
+.hover_item_right>a{
+    display:block;
+    width: 97.5px;
+    height: 33.5px;
+    border-radius: 36px;
+    margin: 20px auto 0;
+    border: 1px solid #0c5ca8;
+    color: #0c5ca8;
+    font-size: 14px;
+    text-align: center;
+    line-height: 33.5px;
+
+}
+
+/* 中间背景图 */
+.contentmiddle{
+    width: 1366px;
+    height: 503px;
+    background-color: blueviolet;
+    margin: 0 auto;
+}
+.contentmiddle>img:nth-child(1){
+    width: 1366px;
+    height: 503px;
+}
+.erweimabox{
+    position: fixed;
+    right: 10px;
+    bottom: 200px;
+    width: 170px;
+   height: 168px;
+   z-index: 999;
+  
+}
+.erweimabox>img:nth-child(1){
+    width: 83px;
+    height: 86px;
+    margin-left: 44px;
+    margin-top: 44px;
+}
+.erweimabox>img:nth-child(2){
+    width: 170px;
+    height: 168px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: none;
+}
+.erweimabox:hover>.bigerweima{
+    display: inline-block;
+}
+/* 第三部分 大图下面 */
+.smartfamly{
+    width: 1366px;
+    height: 336px;
+    padding: 0 0 50px 0;
+   
+    margin: 0 auto;
+    padding: 0.1px;
+}
+.smartfamly>h3{
+    margin-top: 84px;
+    font-size: 30px;
+    color: #333333;
+    font-weight: bold;
+    text-align: center;
+}
+.smartfamly>p{
+    font-size: 14px;
+    color: #666666;
+    line-height: 16px;
+    margin-top: 18px;
+    text-align: center;
+}
+
+.smartfamly>ul{
+    width: 730px;
+    margin: 35px auto 0;
+    display: flex;
+    justify-content: space-between;
+   
+}
+.smartfamly li{
+    width: 75px;
+}
+.smartfamly img{
+    width: 75px;
+    height: 75px;
+}
+.smartfamly>ul p{
+    font-family: "Microsoft YaHei";
+    width: 75px;
+    font-size: 14px;
+    color: #666666;
+    margin-top: 10px;  
+    text-align: center;
+}
+.hangout{
+    width: 1366px;
+    margin: 0 auto;
+}
+.hangout>img{
+    width: 100%;
+    height: 503px;
+}
+.situation{
+    width: 1366px;
+    height: 149px;
+    padding-bottom: 50px;
+    margin: 0 auto;
+   
+    overflow: hidden;
+    text-align: center;
+    font-family: "microsoft yahei";
+}
+.situation>h3{
+    margin-top: 84px;
+    font-size: 30px;
+    color: #333333;
+    font-weight: bold;
+}
+.situation>p{
+   margin-top: 18px;
+   font-size: 14px;
+    color: #666666;
+}
+/* 三个图加动态 */
+.jumppic{
+    width: 1366px;
+    height: 585px;
+    padding:0 60px 50px;
+    background: #f1f1f1;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.jumppic>div>img{
+    width: 394px;
+    height: 585px;
+  
+}
+.jumppic-1,
+.jumppic-2,
+.jumppic-3{
+    position: relative;
+}
+.jumppic>div>div{
+    width: 115px;
+    height: 115px;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 80px;
+    background-color: #184996;
+}
+.jumppic>div>div>img{
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin: 17px auto 3px;
+}
+.jumppic>div>div>p{
+   text-align: center;
+   font-size: 20px;
+    color: white;
+}
+.jumppic>div>div{
+    transition: all 0.8s ease;
+}
+/* 隐藏的段落设置样式 */
+.jumppic>div>p{
+    width: 100%;
+    font-size: 20px;
+    line-height: 36px;
+    color: #eee;
+    position: absolute;
+    left: 0px;
+    bottom: -50px;
+    text-align: center;
+    transition: all 0.8s ease;
+    display: none; 
+}
+.jumppic>div>p>em{
+    font-style: normal;
+    font-size: 22px;
+    display: block;
+    padding-bottom: 15px;
+    color: rgba(255,255,255,.8);
+}
+.jumppic>div>span{
+    display: block;
+    width: 394px;
+    height: 585px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: gray;
+    display: none;
+}
+/* hover且过渡 */
+.jumppic>div:hover>span{
+    display: block;
+   opacity: 0.6;
+}
+.jumppic>div:hover>div{
+    bottom: 280px;
+}
+.jumppic>div:hover>p{
+   bottom: 70px;
+   display: block;
+}
+
+
+

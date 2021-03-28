@@ -1,0 +1,495 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  font-size: calc(100*100vw/750);
+}
+
+.header {
+  width: 100%;
+  padding: 0 0.3rem;
+  height: 1.05rem;
+  margin: 0 auto;
+  border-bottom: 0.02rem solid #eee;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  background-color: aqua;
+}
+
+.header > div {
+  width: 33.333%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.header > div:nth-child(2) {
+  justify-content: center;
+}
+
+.header > div:nth-child(2) img {
+  width: 1.7rem;
+  height: 100%;
+}
+
+.header > div:last-child {
+  justify-content: flex-end;
+}
+
+.header > div:last-child > a:nth-child(3),
+.header > div:last-child > a:nth-child(2) {
+  padding-left: 0.2rem;
+}
+
+.header .iconfont {
+  font-size: 0.48rem;
+  color: #0c5ca8;
+}
+
+.bigpic1 {
+  width: 7.5rem;
+  height: 4.44rem;
+  background-image: url(./海尔官网img/移动端图1.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.section3 {
+  width: 100vw;
+  height: 7.24rem;
+  padding-bottom: 0.6rem;
+}
+
+.section3 h4 {
+  width: 90%;
+  text-align: center;
+  font-size: 0.4rem;
+  color: #333333;
+  font-weight: bold;
+  padding-top: 0.8rem;
+  margin: 0 auto;
+}
+
+.section3 > p {
+  width: 90%;
+  text-align: center;
+  font-size: 14px;
+  color: #666666;
+  padding-top: 16px;
+  margin: 0 auto;
+}
+
+.section3 ul {
+  width: 6rem;
+  margin: 0 auto;
+  height: 1.9rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 0.6rem;
+}
+
+.section3 ul li {
+  width: 1.32rem;
+  height: 1.9rem;
+}
+
+.section3 ul li img {
+  width: 1.32rem;
+  height: 1.32rem;
+}
+
+.section3 ul li p {
+  font-family: "Microsoft YaHei";
+  width: 1.32rem;
+  font-size: 0.28rem;
+  color: #666666;
+  text-align: center;
+}
+
+.bigpic2 {
+  width: 100%;
+  height: 4.44rem;
+}
+
+.bigpic2 img {
+  width: 100vw;
+  height: 4.44rem;
+}
+
+.situation {
+  width: 100vw;
+  height: 2.84rem;
+  padding-bottom: 0.6rem;
+  margin: 0 auto;
+  overflow: hidden;
+  text-align: center;
+  font-family: "microsoft yahei";
+  box-sizing: border-box;
+}
+
+.situation > h3 {
+  width: 6.75rem;
+  margin: 0.8rem auto 0.375rem;
+  font-size: 0.4rem;
+  color: #333333;
+  font-weight: bold;
+}
+
+.situation > p {
+  margin: 0 auto;
+  width: 6.75rem;
+  font-size: 0.28rem;
+  color: #666666;
+}
+
+.jumppic {
+  width: 100vw;
+  height: 3.62rem;
+  padding: 0 0 0.4rem;
+  background: #f1f1f1;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.jumppic .jumppic-1,
+.jumppic .jumppic-2,
+.jumppic .jumppic-3 {
+  position: relative;
+}
+
+.jumppic .jumppic-1 > img,
+.jumppic .jumppic-2 > img,
+.jumppic .jumppic-3 > img {
+  width: 2.44rem;
+  height: 3.62rem;
+}
+
+.jumppic .jumppic-1 > div,
+.jumppic .jumppic-2 > div,
+.jumppic .jumppic-3 > div {
+  width: 1.46rem;
+  height: 1.46rem;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: 6%;
+  background-color: #184996;
+  transition: all 0.8s ease;
+}
+
+.jumppic .jumppic-1 > div > img,
+.jumppic .jumppic-2 > div > img,
+.jumppic .jumppic-3 > div > img {
+  display: block;
+  width: 0.585rem;
+  height: 0.585rem;
+  margin: 10% auto 10%;
+}
+
+.jumppic .jumppic-1 > div > p,
+.jumppic .jumppic-2 > div > p,
+.jumppic .jumppic-3 > div > p {
+  text-align: center;
+  font-size: 0.24rem;
+  color: white;
+}
+
+.pc-header-2 {
+  width: 100vw;
+  height: 112px;
+  padding: 0 0 0.6rem;
+  overflow: hidden;
+}
+
+.pc-header-2 h3 {
+  width: 6.75rem;
+  text-align: center;
+  font-size: 0.4rem;
+  color: #333333;
+  margin: 0.8rem auto 0;
+  font-weight: bold;
+}
+
+.pc-header-2 p {
+  width: 6.75rem;
+  text-align: center;
+  font-size: 14px;
+  color: #666666;
+  margin: 0.32rem auto 0;
+}
+
+.voicecontrol {
+  width: 100vw;
+  height: 7.97rem;
+  margin: 0 auto;
+  position: relative;
+}
+
+.voicecontrol img {
+  width: 100%;
+  height: 100%;
+  float: left;
+}
+
+.voicecontrol ul {
+  width: 100vw;
+  height: 3.12rem;
+  position: absolute;
+  left: 0;
+  top: 10vw;
+  perspective: 10rem;
+}
+
+.voicecontrol ul li {
+  font-size: 0.28rem;
+  color: #4ba5cf;
+  margin: 0 auto;
+  text-align: center;
+  transition: all 1s ease;
+}
+
+.easydesign {
+  width: 100vw;
+  height: 2.62rem;
+  padding-bottom: 0.6rem;
+  margin: 0 auto;
+  text-align: center;
+  background: #f1f1f1;
+  padding-top: 0.002rem;
+}
+
+.easydesign h3 {
+  margin-top: 0.8rem;
+  font-size: 0.4rem;
+  color: #333333;
+  font-weight: bold;
+}
+
+.easydesign p {
+  font-size: 0.28rem;
+  color: #666666;
+  margin-top: 0.32rem;
+}
+
+.phone {
+  width: 100vw;
+  height: 4.5rem;
+  margin: 0 auto;
+  background-image: url(./海尔官网img/mc_phone.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.threeactive {
+  margin: 0 auto;
+  width: 100vw;
+  height: 5.25rem;
+  background-image: url(./海尔官网img/pc_member.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 0.002rem;
+  position: relative;
+}
+
+.threeactive .threeactivecontainer {
+  width: 100%;
+  height: 316px;
+  position: absolute;
+  top: 160px;
+  left: 0px;
+}
+
+.threeactive .threeactivecontainer > div {
+  width: 530px;
+  height: 140px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.threeactive .threeactivecontainer > div > span {
+  display: inline-block;
+  width: 140px;
+  height: 140px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.threeactive .threeactivecontainer > div > span .item2box,
+.threeactive .threeactivecontainer > div > span .item3box {
+  opacity: 0;
+}
+
+.threeactive .threeactivecontainer > div > span .hidecontain {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  bottom: 0px;
+  left: 0px;
+  text-align: center;
+}
+
+.threeactive .threeactivecontainer > div > span .hidecontain > h4 {
+  color: #fff;
+  font-size: 32px;
+}
+
+.threeactive .threeactivecontainer > div > span .hidecontain > h5 {
+  margin-top: 14px;
+  color: #fff;
+  font-size: 32px;
+}
+
+.threeactive .threeactivecontainer > div > span .hidecontain > p {
+  margin-top: 32px;
+  font-size: 20px;
+  color: #EEEEEE;
+}
+
+.threeactive .threeactivecontainer > div > span:nth-child(1) {
+  background-image: url(./海尔官网img/pc_memberImg1.png);
+  animation: action1 9s ease  infinite normal;
+}
+
+@keyframes action1 {
+  from {
+    background-image: url(./海尔官网img/pc_memberImg1_1.png);
+  }
+  32% {
+    background-image: url(./海尔官网img/pc_memberImg1_1.png);
+  }
+  33% {
+    background-image: url(./海尔官网img/pc_memberImg1.png);
+  }
+  100% {
+  }
+}
+
+.threeactive .threeactivecontainer > div > span:nth-child(2) {
+  background-image: url(./海尔官网img/pc_memberImg2.png);
+  animation: action2 9s ease  infinite normal;
+}
+
+@keyframes action2 {
+  from {
+    background-image: url(./海尔官网img/pc_memberImg2.png);
+  }
+  32% {
+    background-image: url(./海尔官网img/pc_memberImg2.png);
+  }
+  33% {
+    background-image: url(./海尔官网img/pc_memberImg2_1.png);
+  }
+  65% {
+    background-image: url(./海尔官网img/pc_memberImg2_1.png);
+  }
+  66% {
+    background-image: url(./海尔官网img/pc_memberImg2.png);
+  }
+  100% {
+  }
+}
+
+.threeactive .threeactivecontainer > div > span:nth-child(3) {
+  background-image: url(./海尔官网img/pc_memberImg3.png);
+  animation: action3 9s ease  infinite normal;
+}
+
+@keyframes action3 {
+  from {
+    background-image: url(./海尔官网img/pc_memberImg3.png);
+  }
+  65% {
+    background-image: url(./海尔官网img/pc_memberImg3.png);
+  }
+  66% {
+    background-image: url(./海尔官网img/pc_memberImg3_1.png);
+  }
+  99% {
+    background-image: url(./海尔官网img/pc_memberImg3_1.png);
+  }
+  100% {
+    background-image: url(./海尔官网img/pc_memberImg3.png);
+  }
+}
+
+.threeactive .threeactivecontainer > div .item1box {
+  animation: action1_a 9s ease  infinite normal;
+}
+
+@keyframes action1_a {
+  from {
+    opacity: 1;
+  }
+  32% {
+    opacity: 1;
+  }
+  33% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.threeactive .threeactivecontainer > div .item2box {
+  animation: action2_a 9s ease  infinite normal;
+}
+
+@keyframes action2_a {
+  from {
+    opacity: 0;
+  }
+  32% {
+    opacity: 0;
+  }
+  33% {
+    opacity: 1;
+  }
+  65% {
+    opacity: 1;
+  }
+  66% {
+    opacity: 0;
+  }
+  100% {
+  }
+}
+
+.threeactive .threeactivecontainer > div .item3box {
+  animation: action3_a 9s ease  infinite normal;
+}
+
+@keyframes action3_a {
+  from {
+    opacity: 0;
+  }
+  65% {
+    opacity: 0;
+  }
+  66% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
